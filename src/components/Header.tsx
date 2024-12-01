@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { problemCategories, type ProblemCategory } from '@/data/problems'
 import { interventionCategories, type InterventionCategory } from '@/data/interventions'
 import { serviceCategories } from '@/data/services-new'
+import MobileEstimation from './MobileEstimation'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -80,6 +81,18 @@ export default function Header() {
       if (interventionMenuTimeout.current) clearTimeout(interventionMenuTimeout.current)
     }
   }, [])
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -301,27 +314,22 @@ export default function Header() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden py-4">
-              <div className="flex flex-col space-y-3">
-                {/* Mobile Logo */}
-                <Link href="/" className="flex items-center space-x-2">
-                  <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                    Debouchage Luxembourg
-                  </span>
-                </Link>
-                <Link href="/" className="mobile-nav-link">
-                  Accueil
-                </Link>
-                <div className="py-1">
+            <div className="lg:hidden fixed inset-0 bg-white z-50 flex flex-col h-screen">
+              <div className="flex-1 overflow-y-auto px-4 py-6">
+                <div className="flex justify-between items-center mb-8">
+                  {/* Mobile Logo */}
+                  <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center space-x-2">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                      Debouchage Luxembourg
+                    </span>
+                  </Link>
+                  {/* Close Button */}
                   <button
-                    className="flex items-center justify-between w-full px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg"
-                    onClick={() => setIsProblemMenuOpen(!isProblemMenuOpen)}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="p-2 rounded-lg hover:bg-gray-100"
                   >
-                    <span>Problèmes</span>
                     <svg
-                      className={`w-4 h-4 transition-transform ${
-                        isProblemMenuOpen ? 'rotate-180' : ''
-                      }`}
+                      className="w-6 h-6 text-gray-600"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -330,82 +338,106 @@ export default function Header() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
+                        d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
                   </button>
-                  {isProblemMenuOpen && (
-                    <div className="mt-2 space-y-1">
-                      {problemCategories.map((category: ProblemCategory) => (
-                        <Link
-                          key={category.id}
-                          href={`/problemes/${category.slug}`}
-                          className="flex items-center px-8 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          <span className="text-lg mr-3">
-                            🔧
-                          </span>
-                          <span className="font-medium">{category.name}</span>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
                 </div>
-                <div className="py-1">
-                  <button
-                    className="flex items-center justify-between w-full px-4 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-lg"
-                    onClick={() => setIsInterventionMenuOpen(!isInterventionMenuOpen)}
-                  >
-                    <span>Interventions</span>
-                    <svg
-                      className={`w-4 h-4 transition-transform ${
-                        isInterventionMenuOpen ? 'rotate-180' : ''
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+
+                <div className="space-y-6">
+                  <div>
+                    <MobileEstimation />
+                  </div>
+
+                  <div className="space-y-4">
+                    <button
+                      className="flex items-center justify-between w-full text-xl font-medium text-gray-900 hover:text-blue-600"
+                      onClick={() => setIsProblemMenuOpen(!isProblemMenuOpen)}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </button>
-                  {isInterventionMenuOpen && (
-                    <div className="mt-2 space-y-1">
-                      {interventionCategories.map((category: InterventionCategory) => (
-                        <Link
-                          key={category.id}
-                          href={`/interventions/${category.slug}`}
-                          className="flex items-center px-8 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          <span className="text-lg mr-3">
-                            🔧
-                          </span>
-                          <span className="font-medium">{category.name}</span>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                      <span>Problèmes</span>
+                      <svg
+                        className={`w-5 h-5 transition-transform ${
+                          isProblemMenuOpen ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    {isProblemMenuOpen && (
+                      <div className="pl-4 space-y-3">
+                        {problemCategories.map((category: ProblemCategory) => (
+                          <Link
+                            key={category.id}
+                            href={`/problemes/${category.slug}`}
+                            className="block text-lg text-gray-600 hover:text-blue-600"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            <span className="inline-block w-8">{category.problems[0]?.icon || '🔧'}</span>
+                            {category.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="space-y-4">
+                    <button
+                      className="flex items-center justify-between w-full text-xl font-medium text-gray-900 hover:text-blue-600"
+                      onClick={() => setIsInterventionMenuOpen(!isInterventionMenuOpen)}
+                    >
+                      <span>Interventions</span>
+                      <svg
+                        className={`w-5 h-5 transition-transform ${
+                          isInterventionMenuOpen ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    {isInterventionMenuOpen && (
+                      <div className="pl-4 space-y-3">
+                        {interventionCategories.map((category: InterventionCategory) => (
+                          <Link
+                            key={category.id}
+                            href={`/interventions/${category.slug}`}
+                            className="block text-lg text-gray-600 hover:text-blue-600"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            <span className="inline-block w-8">{category.interventions[0]?.icon || '🔧'}</span>
+                            {category.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
-                <Link
-                  href="/devis"
-                  className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Devis Gratuit
-                </Link>
+              </div>
+
+              {/* Fixed bottom buttons */}
+              <div className="px-4 py-4 border-t border-gray-200">
                 <a
                   href="tel:+352661297770"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
                   onClick={() => setIsMenuOpen(false)}
+                  className="block w-full py-4 text-center text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700"
                 >
                   <span className="mr-2">📞</span>
-                  <span>661 29 77 70</span>
+                  +352 661 297 770
                 </a>
               </div>
             </div>

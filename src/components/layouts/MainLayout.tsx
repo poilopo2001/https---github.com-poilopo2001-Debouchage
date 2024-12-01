@@ -24,7 +24,7 @@ export default function MainLayout({ children, hero }: MainLayoutProps) {
               style={{ backgroundImage: `url(${hero.image})` }}
             />
           )}
-          <div className="relative container mx-auto px-4 py-16 sm:py-24">
+          <div className="relative container mx-auto px-4 pt-28 sm:pt-32 pb-16 sm:pb-24">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-900 leading-tight">
                 {hero.title}

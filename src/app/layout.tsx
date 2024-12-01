@@ -28,7 +28,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <RecentCall />
+        <div className="hidden lg:block">
+          <RecentCall />
+        </div>
       </body>
     </html>
   )
