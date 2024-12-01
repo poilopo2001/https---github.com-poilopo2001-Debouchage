@@ -10,7 +10,9 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isProblemMenuOpen, setIsProblemMenuOpen] = useState(false)
   const [isInterventionMenuOpen, setIsInterventionMenuOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
+  const lastScrollY = useRef(0)
   
   const problemMenuTimeout = useRef<NodeJS.Timeout>()
   const interventionMenuTimeout = useRef<NodeJS.Timeout>()
@@ -42,11 +44,37 @@ export default function Header() {
   }
 
   useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') {
+        const currentScrollY = window.scrollY
+        
+        // Only trigger hide/show after scrolling more than 10px to prevent tiny movements
+        if (Math.abs(currentScrollY - lastScrollY.current) < 10) {
+          return
+        }
+
+        // Show header when scrolling up or at the top
+        if (currentScrollY < lastScrollY.current || currentScrollY < 50) {
+          setIsVisible(true)
+        } 
+        // Hide header when scrolling down and not at the top
+        else if (currentScrollY > 50) {
+          setIsVisible(false)
+          // Close mobile menu when hiding header
+          setIsMenuOpen(false)
+        }
+
+        lastScrollY.current = currentScrollY
+      }
+    }
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
+    window.addEventListener('scroll', controlNavbar)
     window.addEventListener('scroll', handleScroll)
     return () => {
+      window.removeEventListener('scroll', controlNavbar)
       window.removeEventListener('scroll', handleScroll)
       if (problemMenuTimeout.current) clearTimeout(problemMenuTimeout.current)
       if (interventionMenuTimeout.current) clearTimeout(interventionMenuTimeout.current)
@@ -55,7 +83,9 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4`}>
+      <header 
+        className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4 ${isVisible ? 'translate-y-0' : '-translate-y-full'} ${isScrolled ? 'shadow-md' : ''}`}
+      >
         <nav className="container mx-auto px-4 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
