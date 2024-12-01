@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { problemCategories } from '@/data/problems'
-import { interventionCategories } from '@/data/interventions'
+import { problemCategories, type ProblemCategory } from '@/data/problems'
+import { interventionCategories, type InterventionCategory } from '@/data/interventions'
+import { serviceCategories } from '@/data/services-new'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -119,14 +120,14 @@ export default function Header() {
                         <div>
                           <h3 className="text-sm font-semibold text-gray-400 mb-3">PROBLÈMES COURANTS</h3>
                           <div className="grid grid-cols-1 gap-1">
-                            {problemCategories.slice(0, 6).map((category) => (
+                            {problemCategories.slice(0, 6).map((category: ProblemCategory) => (
                               <Link
                                 key={category.id}
                                 href={`/problemes/${category.slug}`}
                                 className="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg group"
                               >
                                 <span className="text-lg mr-3 group-hover:scale-110 transition-transform">
-                                  {category.icon || '🔧'}
+                                  🔧
                                 </span>
                                 <span className="font-medium">{category.name}</span>
                               </Link>
@@ -192,14 +193,14 @@ export default function Header() {
                         <div>
                           <h3 className="text-sm font-semibold text-gray-400 mb-3">NOS SERVICES</h3>
                           <div className="grid grid-cols-1 gap-1">
-                            {interventionCategories.slice(0, 6).map((category) => (
+                            {interventionCategories.slice(0, 6).map((category: InterventionCategory) => (
                               <Link
                                 key={category.id}
                                 href={`/interventions/${category.slug}`}
                                 className="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg group"
                               >
                                 <span className="text-lg mr-3 group-hover:scale-110 transition-transform">
-                                  {category.icon || '🔧'}
+                                  🔧
                                 </span>
                                 <span className="font-medium">{category.name}</span>
                               </Link>
@@ -329,7 +330,7 @@ export default function Header() {
                   </button>
                   {isProblemMenuOpen && (
                     <div className="mt-2 space-y-1">
-                      {problemCategories.map((category) => (
+                      {problemCategories.map((category: ProblemCategory) => (
                         <Link
                           key={category.id}
                           href={`/problemes/${category.slug}`}
@@ -337,9 +338,9 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           <span className="text-lg mr-3">
-                            {category.icon || '🔧'}
+                            🔧
                           </span>
-                          {category.name}
+                          <span className="font-medium">{category.name}</span>
                         </Link>
                       ))}
                     </div>
@@ -369,7 +370,7 @@ export default function Header() {
                   </button>
                   {isInterventionMenuOpen && (
                     <div className="mt-2 space-y-1">
-                      {interventionCategories.map((category) => (
+                      {interventionCategories.map((category: InterventionCategory) => (
                         <Link
                           key={category.id}
                           href={`/interventions/${category.slug}`}
@@ -377,9 +378,9 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           <span className="text-lg mr-3">
-                            {category.icon || '🔧'}
+                            🔧
                           </span>
-                          {category.name}
+                          <span className="font-medium">{category.name}</span>
                         </Link>
                       ))}
                     </div>

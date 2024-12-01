@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Contact from '@/components/Contact'
 import CoverageArea from '@/components/CoverageArea'
-import PriceCalculator from '@/components/PriceCalculator'
 import Testimonials from '@/components/Testimonials'
 import RecentCall from '@/components/RecentCall'
 
@@ -20,7 +19,6 @@ export default function Home() {
       <Contact />
       <CoverageArea />
       <Testimonials />
-      <PriceCalculator />
       <RecentCall />
     </main>
   )

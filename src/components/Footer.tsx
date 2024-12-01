@@ -1,6 +1,6 @@
 import { problemCategories } from '@/data/problems'
 import { interventionCategories } from '@/data/interventions'
-import { citiesData } from '@/data/cities-data'
+import { CityData } from '@/data/cities-data'
 import Link from 'next/link'
 
 const regions = [
