@@ -1,9 +1,9 @@
-import Header from '@/components/Header'
+import { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 import CoverageArea from '@/components/CoverageArea'
+import PriceCalculator from '@/components/PriceCalculator'
 import Testimonials from '@/components/Testimonials'
 import RecentCall from '@/components/RecentCall'
 
@@ -14,15 +14,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <main>
       <Hero />
       <Services />
-      <Testimonials />
-      <CoverageArea />
       <Contact />
-      <Footer />
+      <CoverageArea />
+      <Testimonials />
+      <PriceCalculator />
       <RecentCall />
-    </>
+    </main>
   )
 }
