@@ -11,7 +11,6 @@ export default function Header() {
   const [isProblemMenuOpen, setIsProblemMenuOpen] = useState(false)
   const [isInterventionMenuOpen, setIsInterventionMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [showPromo, setShowPromo] = useState(true)
   
   const problemMenuTimeout = useRef<NodeJS.Timeout>()
   const interventionMenuTimeout = useRef<NodeJS.Timeout>()
@@ -56,30 +55,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Promo Banner */}
-      {showPromo && (
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-2 relative">
-          <div className="container mx-auto px-4 text-center text-sm flex items-center justify-center">
-            <span className="mr-2">🎉</span>
-            <span className="font-medium">Offre spéciale : -20% sur votre première intervention !</span>
-            <a href="tel:+352661297770" className="ml-4 underline hover:no-underline">
-              Appelez maintenant
-            </a>
-            <button 
-              onClick={() => setShowPromo(false)}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      )}
-
-      <header className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-sm py-4'
-      }`} style={{ top: showPromo ? '32px' : '0', transition: 'top 0.3s ease-in-out' }}>
+      <header className={`fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm py-4`}>
         <nav className="container mx-auto px-4 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}

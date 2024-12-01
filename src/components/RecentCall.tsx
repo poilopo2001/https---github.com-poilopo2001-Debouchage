@@ -14,7 +14,6 @@ const CITIES = [
 
 export default function RecentCall() {
   const [currentCity, setCurrentCity] = useState(CITIES[0])
-  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     // Change city every 45 seconds
@@ -25,50 +24,35 @@ export default function RecentCall() {
         return CITIES[nextIndex]
       })
     }, 45000)
-
-    // Handle scroll events
-    const handleScroll = () => {
-      // Show after scrolling 100px
-      if (window.scrollY > 100) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
     
     return () => {
       clearInterval(cityInterval)
-      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
-  if (!isVisible) return null
-
   return (
-    <div className="fixed bottom-8 left-8 z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
-      <div className="bg-white rounded-lg shadow-xl p-4 max-w-sm border-l-4 border-green-500">
-        <div className="flex items-center gap-4">
+    <div className="fixed bottom-6 left-6 z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
+      <div className="bg-white rounded-lg shadow-xl p-3 max-w-xs border-l-4 border-green-500">
+        <div className="flex items-center gap-3">
           <div className="flex-shrink-0">
             <div className="relative">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">⚡</span>
+              <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <span className="text-lg">⚡</span>
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             </div>
           </div>
           <div>
-            <div className="space-y-1">
-              <h3 className="font-bold text-gray-900">
+            <div className="space-y-0.5">
+              <h3 className="font-bold text-sm text-gray-900">
                 Équipe disponible à {currentCity.name}
               </h3>
-              <p className="text-sm text-green-600 font-medium">
+              <p className="text-xs text-green-600 font-medium">
                 Intervention possible dans {currentCity.time} min
               </p>
               <a 
                 href="tel:+352661297770"
-                className="inline-block text-sm text-blue-600 hover:text-blue-800 font-semibold"
+                className="inline-block text-xs text-blue-600 hover:text-blue-800 font-semibold"
               >
                 Appelez maintenant →
               </a>

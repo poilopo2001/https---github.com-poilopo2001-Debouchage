@@ -1,10 +1,8 @@
 import { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
-import Contact from '@/components/Contact'
 import CoverageArea from '@/components/CoverageArea'
 import Testimonials from '@/components/Testimonials'
-import RecentCall from '@/components/RecentCall'
 
 export const metadata: Metadata = {
   title: 'Debouchage Canalisation Luxembourg | Depannage Jour et Nuit',
@@ -16,10 +14,8 @@ export default function Home() {
     <main>
       <Hero />
       <Services />
-      <Contact />
       <CoverageArea />
       <Testimonials />
-      <RecentCall />
     </main>
   )
 }

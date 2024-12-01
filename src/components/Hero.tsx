@@ -41,13 +41,13 @@ export default function Hero() {
               <span className="text-2xl">📞</span> Appel Urgent
             </a>
             <a
-              href="#devis"
+              href="/devis"
               className="bg-white text-blue-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl"
             >
               Devis Gratuit
             </a>
             <a
-              href="#services"
+              href="/services"
               className="bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-800 transition-colors border border-blue-500"
             >
               Nos Services
