@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(params.slug)
   
   return {
-    title: service ? `${service.name} | Services de Débouchage Professionnels` : 'Service non trouvé',
+    title: service ? `${service.name} | Services de Débouchage au Luxembourg` : 'Service non trouvé',
     description: service ? service.shortDescription : 'Service de débouchage spécialisé'
   }
 }
