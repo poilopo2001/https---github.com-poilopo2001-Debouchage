@@ -102,7 +102,7 @@ export default function ProblemCategoryPage({ params }: Props) {
                         Demander un devis gratuit
                       </a>
                       <a
-                        href="tel:+33123456789"
+                        href="tel:+352661297770"
                         className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-blue-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                       >
                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

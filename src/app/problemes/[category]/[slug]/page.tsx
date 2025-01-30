@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: problem.seo?.title || `${problem.name} Luxembourg | Dépannage Express 24/7`,
-    description: problem.seo?.description || `${problem.shortDescription} au Luxembourg. Intervention rapide par des experts qualifiés. Devis gratuit ☎️ +352 621 469 018`
+    description: problem.seo?.description || `${problem.shortDescription} au Luxembourg. Intervention rapide par des experts qualifiés. Devis gratuit ☎️ +352 661 297 770`
   }
 }
 

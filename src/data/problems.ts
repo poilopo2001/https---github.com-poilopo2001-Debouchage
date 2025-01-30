@@ -34,7 +34,7 @@ export const problemCategories: ProblemCategory[] = [
     description: 'Solutions professionnelles pour tous les problèmes d\'odeurs dans vos canalisations et installations sanitaires',
     seo: {
       title: 'Problemes d\'Odeurs Canalisation Luxembourg ? Dépannage 24/7',
-      description: 'Mauvaises odeurs dans vos canalisations au Luxembourg ? Nos experts interviennent rapidement pour éliminer les odeurs d\'égout et émanations. Diagnostic et devis gratuit ☎️ +352 621 469 018'
+      description: 'Mauvaises odeurs dans vos canalisations au Luxembourg ? Nos experts interviennent rapidement pour éliminer les odeurs d\'égout et émanations. Diagnostic et devis gratuit ☎️ +352 661 297 770'
     },
     problems: [
       {
@@ -45,7 +45,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🦨',
         seo: {
           title: 'Odeurs d\'Égout Luxembourg ? Intervention Rapide 24/7',
-          description: 'Élimination des odeurs d\'égout au Luxembourg. Nos experts identifient et traitent la source des mauvaises odeurs. Intervention express, devis gratuit ☎️ +352 621 469 018'
+          description: 'Élimination des odeurs d\'égout au Luxembourg. Nos experts identifient et traitent la source des mauvaises odeurs. Intervention express, devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -56,7 +56,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚿',
         seo: {
           title: 'Odeurs Salle de Bain Luxembourg ? Solution Express',
-          description: 'Élimination des mauvaises odeurs dans votre salle de bain au Luxembourg ? Nos plombiers éliminent rapidement les odeurs désagréables. Intervention 24/7, devis gratuit ☎️ +352 621 469 018'
+          description: 'Élimination des mauvaises odeurs dans votre salle de bain au Luxembourg ? Nos plombiers éliminent rapidement les odeurs désagréables. Intervention 24/7, devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -67,7 +67,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🍳',
         seo: {
           title: 'Odeurs Cuisine Luxembourg ? Intervention Urgente',
-          description: 'Odeurs désagréables dans votre cuisine au Luxembourg ? Nos experts éliminent rapidement les mauvaises odeurs. Service disponible 24/7 ☎️ +352 621 469 018'
+          description: 'Odeurs désagréables dans votre cuisine au Luxembourg ? Nos experts éliminent rapidement les mauvaises odeurs. Service disponible 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -78,7 +78,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🏚️',
         seo: {
           title: 'Odeurs Sous-Sol Luxembourg ? Traitement Efficace',
-          description: 'Odeurs persistantes dans votre sous-sol au Luxembourg ? Nos experts identifient et éliminent la source des mauvaises odeurs. Intervention rapide, devis gratuit ☎️ +352 621 469 018'
+          description: 'Odeurs persistantes dans votre sous-sol au Luxembourg ? Nos experts identifient et éliminent la source des mauvaises odeurs. Intervention rapide, devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -130,7 +130,7 @@ export const problemCategories: ProblemCategory[] = [
     description: 'Solutions efficaces pour tous les problèmes de remontées d\'eau et refoulements dans vos canalisations',
     seo: {
       title: 'Refoulement Canalisation Luxembourg ? Intervention Express',
-      description: 'Problème de remontées d\'eau ou refoulement d\'égout au Luxembourg ? Notre équipe intervient en urgence pour stopper les remontées d\'eau. Devis gratuit ☎️ +352 621 469 018'
+      description: 'Problème de remontées d\'eau ou refoulement d\'égout au Luxembourg ? Notre équipe intervient en urgence pour stopper les remontées d\'eau. Devis gratuit ☎️ +352 661 297 770'
     },
     problems: [
       {
@@ -141,7 +141,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🌊',
         seo: {
           title: 'Refoulement Égout Luxembourg ? Intervention Urgente 24/7',
-          description: 'Refoulement d\'égout au Luxembourg ? Nos experts interviennent en 30 minutes pour stopper le refoulement et nettoyer vos canalisations. Service 24/7 ☎️ +352 621 469 018'
+          description: 'Refoulement d\'égout au Luxembourg ? Nos experts interviennent en 30 minutes pour stopper le refoulement et nettoyer vos canalisations. Service 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -152,7 +152,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '💧',
         seo: {
           title: 'Remontée Eaux Usées Luxembourg ? Dépannage Express',
-          description: 'Problème de remontée d\'eaux usées au Luxembourg ? Intervention rapide de nos experts pour stopper et prévenir les remontées. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Problème de remontée d\'eaux usées au Luxembourg ? Intervention rapide de nos experts pour stopper et prévenir les remontées. Devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -163,7 +163,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚽',
         seo: {
           title: 'Refoulement WC Luxembourg ? Solution Rapide 24/7',
-          description: 'WC qui refoule au Luxembourg ? Nos plombiers interviennent en urgence pour déboucher et nettoyer vos toilettes. Intervention express ☎️ +352 621 469 018'
+          description: 'WC qui refoule au Luxembourg ? Nos plombiers interviennent en urgence pour déboucher et nettoyer vos toilettes. Intervention express ☎️ +352 661 297 770'
         }
       },
       {
@@ -174,7 +174,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚿',
         seo: {
           title: 'Refoulement Douche Luxembourg ? Débouchage Express',
-          description: 'Douche qui refoule au Luxembourg ? Nos experts interviennent rapidement pour déboucher votre douche et éviter les remontées. Service 24/7 ☎️ +352 621 469 018'
+          description: 'Douche qui refoule au Luxembourg ? Nos experts interviennent rapidement pour déboucher votre douche et éviter les remontées. Service 24/7 ☎️ +352 661 297 770'
         }
       }
     ]
@@ -186,7 +186,7 @@ export const problemCategories: ProblemCategory[] = [
     description: 'Solutions professionnelles pour tous types de bouchons et obstructions dans vos canalisations',
     seo: {
       title: 'Canalisation Bouchée Luxembourg ? Débouchage Express 24/7',
-      description: 'Canalisation ou évacuation bouchée au Luxembourg ? Nos experts interviennent en urgence avec le matériel adapté pour tout débouchage. Devis gratuit ☎️ +352 621 469 018'
+      description: 'Canalisation ou évacuation bouchée au Luxembourg ? Nos experts interviennent en urgence avec le matériel adapté pour tout débouchage. Devis gratuit ☎️ +352 661 297 770'
     },
     problems: [
       {
@@ -197,7 +197,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚽',
         seo: {
           title: 'WC Bouché Luxembourg ? Débouchage Urgent 24/7',
-          description: 'Toilettes bouchées au Luxembourg ? Nos plombiers interviennent rapidement avec le matériel adapté pour déboucher votre WC. Service 24/7 ☎️ +352 621 469 018'
+          description: 'Toilettes bouchées au Luxembourg ? Nos plombiers interviennent rapidement avec le matériel adapté pour déboucher votre WC. Service 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -208,7 +208,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚰',
         seo: {
           title: 'Évier Bouché Luxembourg ? Intervention Rapide',
-          description: 'Évier ou lavabo bouché au Luxembourg ? Nos experts débouchent rapidement votre évacuation. Intervention express et devis gratuit ☎️ +352 621 469 018'
+          description: 'Évier ou lavabo bouché au Luxembourg ? Nos experts débouchent rapidement votre évacuation. Intervention express et devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -219,7 +219,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🚿',
         seo: {
           title: 'Douche Bouchée Luxembourg ? Solution Express',
-          description: 'Douche ou bac bouché au Luxembourg ? Intervention rapide de nos experts pour déboucher votre évacuation. Service disponible 24/7 ☎️ +352 621 469 018'
+          description: 'Douche ou bac bouché au Luxembourg ? Intervention rapide de nos experts pour déboucher votre évacuation. Service disponible 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -230,7 +230,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🛁',
         seo: {
           title: 'Baignoire Bouchée Luxembourg ? Débouchage Rapide',
-          description: 'Baignoire qui ne se vide pas au Luxembourg ? Nos plombiers interviennent rapidement pour déboucher votre évacuation. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Baignoire qui ne se vide pas au Luxembourg ? Nos plombiers interviennent rapidement pour déboucher votre évacuation. Devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -241,7 +241,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🔧',
         seo: {
           title: 'Canalisation Principale Bouchée Luxembourg ? Intervention Pro',
-          description: 'Canalisation principale obstruée au Luxembourg ? Nos experts interviennent avec du matériel professionnel pour tout débouchage. Service urgent 24/7 ☎️ +352 621 469 018'
+          description: 'Canalisation principale obstruée au Luxembourg ? Nos experts interviennent avec du matériel professionnel pour tout débouchage. Service urgent 24/7 ☎️ +352 661 297 770'
         }
       }
     ]
@@ -253,7 +253,7 @@ export const problemCategories: ProblemCategory[] = [
     description: 'Solutions expertes pour tous les problèmes structurels de vos canalisations',
     seo: {
       title: 'Problème Canalisation Luxembourg ? Expert en Réparation',
-      description: 'Problèmes structurels de canalisations au Luxembourg ? Nos experts diagnostiquent et réparent tous types de dégâts : fissures, affaissements, racines. Devis gratuit ☎️ +352 621 469 018'
+      description: 'Problèmes structurels de canalisations au Luxembourg ? Nos experts diagnostiquent et réparent tous types de dégâts : fissures, affaissements, racines. Devis gratuit ☎️ +352 661 297 770'
     },
     problems: [
       {
@@ -264,7 +264,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '💔',
         seo: {
           title: 'Canalisation Cassée Luxembourg ? Réparation Urgente',
-          description: 'Canalisation cassée ou fissurée au Luxembourg ? Intervention rapide de nos experts pour réparer vos canalisations. Service disponible 24/7 ☎️ +352 621 469 018'
+          description: 'Canalisation cassée ou fissurée au Luxembourg ? Intervention rapide de nos experts pour réparer vos canalisations. Service disponible 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -275,7 +275,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🌳',
         seo: {
           title: 'Racines dans Canalisation Luxembourg ? Solution Pro',
-          description: 'Racines qui obstruent vos canalisations au Luxembourg ? Nos experts éliminent les racines et réparent vos conduites. Intervention garantie ☎️ +352 621 469 018'
+          description: 'Racines qui obstruent vos canalisations au Luxembourg ? Nos experts éliminent les racines et réparent vos conduites. Intervention garantie ☎️ +352 661 297 770'
         }
       },
       {
@@ -286,7 +286,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '⤵️',
         seo: {
           title: 'Affaissement Canalisation Luxembourg ? Réparation Express',
-          description: 'Canalisation affaissée au Luxembourg ? Nos experts interviennent rapidement pour réparer et stabiliser vos conduites. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Canalisation affaissée au Luxembourg ? Nos experts interviennent rapidement pour réparer et stabiliser vos conduites. Devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -297,7 +297,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🔄',
         seo: {
           title: 'Joint Canalisation Défectueux Luxembourg ? Réparation Pro',
-          description: 'Joints de canalisation défectueux au Luxembourg ? Nos plombiers remplacent et réparent vos joints pour éviter les fuites. Service rapide ☎️ +352 621 469 018'
+          description: 'Joints de canalisation défectueux au Luxembourg ? Nos plombiers remplacent et réparent vos joints pour éviter les fuites. Service rapide ☎️ +352 661 297 770'
         }
       },
       {
@@ -308,7 +308,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🏗️',
         seo: {
           title: 'Canalisation Écrasée Luxembourg ? Intervention Urgente',
-          description: 'Canalisation écrasée au Luxembourg ? Nos experts interviennent en urgence pour réparer vos conduites endommagées. Service 24/7 ☎️ +352 621 469 018'
+          description: 'Canalisation écrasée au Luxembourg ? Nos experts interviennent en urgence pour réparer vos conduites endommagées. Service 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -319,7 +319,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '〽️',
         seo: {
           title: 'Déformation Canalisation Luxembourg ? Solution Expert',
-          description: 'Canalisation déformée au Luxembourg ? Nos techniciens corrigent et réparent les déformations de vos conduites. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Canalisation déformée au Luxembourg ? Nos techniciens corrigent et réparent les déformations de vos conduites. Devis gratuit ☎️ +352 661 297 770'
         }
       }
     ]
@@ -331,7 +331,7 @@ export const problemCategories: ProblemCategory[] = [
     description: 'Solutions professionnelles pour tous types d\'infiltrations et de fuites dans vos canalisations',
     seo: {
       title: 'Fuite Canalisation Luxembourg ? Réparation Urgente 24/7',
-      description: 'Fuite ou infiltration d\'eau au Luxembourg ? Nos experts détectent et réparent rapidement toutes les fuites de canalisation. Intervention express ☎️ +352 621 469 018'
+      description: 'Fuite ou infiltration d\'eau au Luxembourg ? Nos experts détectent et réparent rapidement toutes les fuites de canalisation. Intervention express ☎️ +352 661 297 770'
     },
     problems: [
       {
@@ -342,7 +342,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '💧',
         seo: {
           title: 'Fuite d\'Eau Luxembourg ? Réparation Express 24/7',
-          description: 'Fuite d\'eau détectée au Luxembourg ? Nos plombiers interviennent en urgence pour localiser et réparer votre fuite. Service disponible 24/7 ☎️ +352 621 469 018'
+          description: 'Fuite d\'eau détectée au Luxembourg ? Nos plombiers interviennent en urgence pour localiser et réparer votre fuite. Service disponible 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -353,7 +353,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🏠',
         seo: {
           title: 'Infiltration Mur Luxembourg ? Solution Durable',
-          description: 'Infiltration d\'eau dans vos murs au Luxembourg ? Nos experts identifient la source et réparent définitivement le problème. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Infiltration d\'eau dans vos murs au Luxembourg ? Nos experts identifient la source et réparent définitivement le problème. Devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -364,7 +364,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🕳️',
         seo: {
           title: 'Fuite Canalisation Enterrée Luxembourg ? Expert',
-          description: 'Fuite dans une canalisation enterrée au Luxembourg ? Nos techniciens localisent et réparent rapidement les fuites souterraines. Intervention pro ☎️ +352 621 469 018'
+          description: 'Fuite dans une canalisation enterrée au Luxembourg ? Nos techniciens localisent et réparent rapidement les fuites souterraines. Intervention pro ☎️ +352 661 297 770'
         }
       },
       {
@@ -375,7 +375,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🏚️',
         seo: {
           title: 'Infiltration Cave Luxembourg ? Intervention Rapide',
-          description: 'Infiltration d\'eau dans votre cave au Luxembourg ? Nos experts trouvent l\'origine et stoppent les infiltrations. Service urgent 24/7 ☎️ +352 621 469 018'
+          description: 'Infiltration d\'eau dans votre cave au Luxembourg ? Nos experts trouvent l\'origine et stoppent les infiltrations. Service urgent 24/7 ☎️ +352 661 297 770'
         }
       },
       {
@@ -386,7 +386,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🔧',
         seo: {
           title: 'Fuite Joint Plomberie Luxembourg ? Réparation Pro',
-          description: 'Fuite au niveau des joints au Luxembourg ? Nos plombiers remplacent ou réparent rapidement vos joints défectueux. Devis gratuit ☎️ +352 621 469 018'
+          description: 'Fuite au niveau des joints au Luxembourg ? Nos plombiers remplacent ou réparent rapidement vos joints défectueux. Devis gratuit ☎️ +352 661 297 770'
         }
       },
       {
@@ -397,7 +397,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '⬆️',
         seo: {
           title: 'Humidité Remontante Luxembourg ? Solution Expert',
-          description: 'Problème d\'humidité remontante au Luxembourg ? Nos experts traitent efficacement les remontées capillaires. Diagnostic gratuit ☎️ +352 621 469 018'
+          description: 'Problème d\'humidité remontante au Luxembourg ? Nos experts traitent efficacement les remontées capillaires. Diagnostic gratuit ☎️ +352 661 297 770'
         }
       }
     ]
@@ -504,7 +504,7 @@ export const problemCategories: ProblemCategory[] = [
         icon: '🕳️',
         seo: {
           title: 'Urgence Égout Luxembourg | Intervention Express 24/7',
-          description: 'Problème d\'égout urgent au Luxembourg ? Intervention rapide 24h/24 pour débouchage et réparation d\'égouts. Service pro ☎️ +352 661 297 770'
+          description: 'Problème d\'égout urgent au Luxembourg ? Intervention rapide 24/7 pour débouchage et réparation d\'égouts. Service pro ☎️ +352 661 297 770'
         },
         fullDescription: 'Service d\'urgence pour tout problème d\'égout nécessitant une intervention immédiate.'
       }
@@ -2432,3 +2432,4 @@ export function getProblemsByCategory(categoryId: string): Problem[] {
 export function getProblemCategoryBySlug(slug: string): ProblemCategory | undefined {
   return problemCategories.find(category => category.slug === slug);
 }
+```

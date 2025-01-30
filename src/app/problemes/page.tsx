@@ -6,7 +6,7 @@ import CategoryCard from '@/components/ui/CategoryCard'
 
 export const metadata: Metadata = {
   title: 'Problèmes de Plomberie Luxembourg | Solutions Rapides',
-  description: 'Découvrez nos solutions pour tous types de problèmes de plomberie au Luxembourg. Intervention rapide 24/7, expertise professionnelle. ☎️ +352 621 469 018'
+  description: 'Découvrez nos solutions pour tous types de problèmes de plomberie au Luxembourg. Intervention rapide 24/7, expertise professionnelle. ☎️ +352 661 297 770'
 }
 
 export default function ProblemesPage() {
