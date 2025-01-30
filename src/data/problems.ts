@@ -1,3 +1,6 @@
+// problems.ts - Module for problem categories and types
+// Updated for Netlify build test
+
 export interface ProblemCategory {
   id: string;
   name: string;
