@@ -2432,4 +2432,3 @@ export function getProblemsByCategory(categoryId: string): Problem[] {
 export function getProblemCategoryBySlug(slug: string): ProblemCategory | undefined {
   return problemCategories.find(category => category.slug === slug);
 }
-```
