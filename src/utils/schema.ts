@@ -1,4 +1,4 @@
-import { services } from '@/data/services';
+import { serviceCategories } from '@/data/services';
 
 const regions = [
   'Luxembourg-Ville et environs',
@@ -118,11 +118,11 @@ export const getProfessionalServiceSchema = () => ({
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Services de Débouchage",
-    itemListElement: services.map((service, index) => ({
+    itemListElement: serviceCategories.map((service, index) => ({
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: service.title,
+        name: service.name,
         description: service.description
       },
       position: index + 1
