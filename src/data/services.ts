@@ -393,6 +393,14 @@ export const serviceCategories: ServiceCategory[] = [
         icon: '🏪'
       },
       {
+        id: 'commerciaux',
+        name: 'Débouchage Commercial',
+        slug: 'debouchage-commerciaux',
+        shortDescription: 'Solutions complètes pour restaurants, hôtels et commerces',
+        icon: '🏢',
+        fullDescription: 'Nos services professionnels de débouchage commercial offrent des solutions adaptées aux restaurants, hôtels et commerces au Luxembourg. Notre équipe intervient rapidement avec des équipements spécialisés pour résoudre tous vos problèmes de canalisations.'
+      },
+      {
         id: 'entrepots',
         name: 'Débouchage Entrepôts',
         slug: 'debouchage-entrepots',
