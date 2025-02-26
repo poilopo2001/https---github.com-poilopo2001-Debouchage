@@ -21,6 +21,14 @@ export const serviceCategories: ServiceCategory[] = [
     description: 'Solutions de débouchage adaptées à tous types de logements',
     services: [
       {
+        id: 'residentiels',
+        name: 'Débouchage Résidentiel',
+        slug: 'debouchage-residentiels',
+        shortDescription: 'Solutions complètes pour tous types d\'habitations : maisons, appartements, villas et studios',
+        icon: '🏠',
+        fullDescription: 'Notre service de débouchage résidentiel offre des solutions professionnelles pour tous types d\'habitations au Luxembourg. Nos techniciens expérimentés interviennent rapidement pour résoudre vos problèmes de canalisations dans les maisons individuelles, appartements, villas et studios.'
+      },
+      {
         id: 'maison',
         name: 'Débouchage Maison',
         slug: 'debouchage-particuliers-maison',
@@ -479,7 +487,7 @@ export const serviceCategories: ServiceCategory[] = [
         id: 'piscines-publiques',
         name: 'Débouchage Piscines Publiques',
         slug: 'debouchage-piscines-publiques',
-        shortDescription: 'Entretien des systèmes de piscines municipales',
+        shortDescription: 'Entretien des systèmes de piscine partagée',
         icon: '🏊'
       },
       {
