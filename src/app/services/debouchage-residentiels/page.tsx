@@ -347,7 +347,7 @@ export default function DebouchageResidentielsPage() {
                         <li>✓ <strong>Prix fixes</strong> annoncés avant intervention</li>
                         <li>✓ <strong>Pas de frais de déplacement</strong> au Luxembourg</li>
                         <li>✓ <strong>Remise 10%</strong> pour les seniors (+65 ans)</li>
-                        <li>✓ <strong>Paiement en 3x</strong> sans frais (>200€)</li>
+                        <li>✓ <strong>Paiement en 3x</strong> sans frais (&gt;200€)</li>
                         <li>✓ <strong>Garantie 6 mois</strong> sur l'intervention</li>
                       </ul>
                     </div>
