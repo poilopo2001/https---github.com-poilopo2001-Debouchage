@@ -4,7 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import RecentCall from '@/components/RecentCall'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import GoogleTagManager from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
       </head>
       <body className={inter.className}>
-        <GoogleAnalytics />
+        <GoogleTagManager />
         <Header />
         <main className="min-h-screen bg-white">
           {children}
