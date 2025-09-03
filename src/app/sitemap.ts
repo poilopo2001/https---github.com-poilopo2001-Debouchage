@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { cities } from '@/data/cities'
+import { cities } from '@/data/cities-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://debouchage-luxembourg.com'
