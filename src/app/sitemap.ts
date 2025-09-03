@@ -1,11 +1,10 @@
 import { MetadataRoute } from 'next'
-import { problemCategories } from '@/data/problems'
-import { interventionCategories } from '@/data/interventions'
+import { cities } from '@/data/cities'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://debouchage-luxembourg.com' // Updated domain name
+  const baseUrl = 'https://debouchage-luxembourg.com'
 
-  // Base routes
+  // Base routes avec nouvelles pages consolidées
   const routes = [
     {
       url: baseUrl,
@@ -14,21 +13,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/problemes`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/interventions`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/services`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
@@ -38,44 +31,72 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/zones-intervention`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/mentions-legales`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/politique-confidentialite`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
+    },
   ]
 
-  // Add problem category pages
-  const problemRoutes = problemCategories.map((category) => ({
-    url: `${baseUrl}/problemes/${category.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
-
-  // Add problem detail pages
-  const problemDetailRoutes = problemCategories.flatMap((category) =>
-    category.problems.map((problem) => ({
-      url: `${baseUrl}/problemes/${category.slug}/${problem.slug}`,
+  // Pages consolidées principales (priorité élevée)
+  const consolidatedServiceRoutes = [
+    {
+      url: `${baseUrl}/services/debouchage-residentiels`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    }))
-  )
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/debouchage-commerciaux`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/services/interventions/techniques-hydrocurage`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/interventions/techniques-furet`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/problemes/elimination-odeurs`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/problemes/debouchage-canalisations`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+  ]
 
-  // Add intervention category pages
-  const interventionRoutes = interventionCategories.map((category) => ({
-    url: `${baseUrl}/interventions/${category.slug}`,
+  // Pages villes (gardées comme demandé)
+  const cityRoutes = cities.map((city) => ({
+    url: `${baseUrl}/zones-intervention/${city.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
   }))
 
-  return [...routes, ...problemRoutes, ...problemDetailRoutes, ...interventionRoutes]
+  return [...routes, ...consolidatedServiceRoutes, ...cityRoutes]
 }
