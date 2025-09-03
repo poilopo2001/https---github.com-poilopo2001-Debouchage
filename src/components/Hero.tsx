@@ -4,12 +4,13 @@ export default function Hero() {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-            Débouchage Express
-            <span className="block text-blue-100">Intervention en 2H</span>
+            <span className="text-yellow-300">Débouchage Canalisation</span>
+            <span className="block text-blue-100">Luxembourg</span>
+            <span className="block text-lg md:text-2xl font-medium text-blue-200 mt-4">Intervention Express en 2H</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Service professionnel de débouchage disponible 24h/24 et 7j/7
-            <span className="block mt-2">Intervention garantie en moins de 2 heures sur toute le Luxembourg</span>
+            <strong>Expert débouchage canalisation Luxembourg</strong> - WC, évier, douche
+            <span className="block mt-2">Plombier professionnel 24h/24 et 7j/7 dans tout le Luxembourg</span>
           </p>
           
           {/* Trust Indicators */}

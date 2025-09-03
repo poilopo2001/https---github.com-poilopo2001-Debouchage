@@ -44,9 +44,9 @@
 **Nouvelle page**: `/problemes/debouchage-canalisations`
 
 ### 6. ZONES D'INTERVENTION
-**Action**: Réduire le nombre de pages de villes
-- Conserver uniquement les pages pour les 5-6 plus grandes villes/régions
-- Consolider les petites villes en pages régionales
+**Action**: Conserver toutes les pages de villes existantes
+- Maintenir la structure actuelle des zones d'intervention
+- Optimiser uniquement le contenu et les meta-données des pages villes
 
 ## MODIFICATIONS TECHNIQUES PRIORITAIRES
 

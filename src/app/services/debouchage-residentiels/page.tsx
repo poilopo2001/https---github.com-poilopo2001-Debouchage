@@ -6,9 +6,9 @@ import { serviceCategories } from '@/data/services'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Services de Débouchage Résidentiel Luxembourg | Solutions Complètes',
-  description: 'Services professionnels de débouchage pour tous types d\'habitations au Luxembourg : maisons, appartements, villas et studios. Intervention rapide 24/7. ☎️ +352 661 297 770',
-  keywords: 'débouchage résidentiel, débouchage maison, débouchage appartement, débouchage villa, débouchage studio, plombier luxembourg, canalisation bouchée',
+  title: '🏠 Débouchage Maison & Résidentiel Luxembourg | Expert Privé',
+  description: 'Spécialiste débouchage maison au Luxembourg. Solutions pour appartements, villas, studios. Plombier expert, intervention sous 2h. Devis gratuit ☎️ +352 661 297 770',
+  keywords: 'débouchage maison luxembourg, débouchage appartement, plombier maison, canalisation bouchée maison, débouchage villa, débouchage studio, urgent',
   alternates: {
     canonical: 'https://debouchage-luxembourg.com/services/debouchage-residentiels',
   },
@@ -136,10 +136,10 @@ export default function DebouchageResidentielsPage() {
                 <span>🛏️</span>
               </div>
               <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
-                Services de Débouchage Résidentiel
+                Débouchage Maison Luxembourg - Expert Résidentiel
               </h1>
               <p className="text-xl text-center text-gray-600 mb-12">
-                Solutions professionnelles pour tous types d'habitations au Luxembourg
+                Spécialiste débouchage maison, appartement, villa et studio au Luxembourg
               </p>
             </div>
           </div>
@@ -149,10 +149,33 @@ export default function DebouchageResidentielsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white shadow-xl rounded-2xl p-8 md:p-12">
               <div className="prose max-w-none">
-                <h2 className="text-2xl font-bold mb-6">Services de Débouchage pour Tous Types d'Habitations</h2>
-                <p className="mb-8">
-                  Notre équipe de plombiers professionnels intervient dans tous les types de logements au Luxembourg pour résoudre vos problèmes de canalisations bouchées. Que vous habitiez dans une maison individuelle, un appartement, une villa luxueuse ou un studio, nous disposons des compétences et de l'équipement nécessaires pour intervenir efficacement et rapidement.
+                <h2 className="text-2xl font-bold mb-6">Débouchage Maison et Logements Résidentiels au Luxembourg</h2>
+                <p className="mb-6">
+                  <strong>Spécialiste du débouchage maison au Luxembourg</strong>, notre équipe de plombiers professionnels intervient dans tous les types de logements pour résoudre vos problèmes de canalisations bouchées. Que vous ayez besoin d'un débouchage maison individuelle, appartement, villa ou studio, nous disposons des compétences et de l'équipement nécessaires pour intervenir efficacement sous 2h.
                 </p>
+
+                {/* Appel à l'action précoce */}
+                <div className="bg-red-50 border-l-4 border-red-400 p-6 mb-8 rounded-r-lg">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="text-2xl">🚨</div>
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="text-lg font-medium text-red-800">Urgence Débouchage Maison ?</h3>
+                      <div className="mt-2 text-red-700">
+                        <p className="text-sm">
+                          <strong>Intervention d'urgence 24h/24</strong> - Notre équipe peut être chez vous en moins de 2h partout au Luxembourg !
+                        </p>
+                        <a 
+                          href="tel:+352661297770" 
+                          className="inline-flex items-center mt-3 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition-colors"
+                        >
+                          📞 +352 661 297 770 - Appeler Maintenant
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
                   {residentialServices.map(service => (
@@ -165,30 +188,34 @@ export default function DebouchageResidentielsPage() {
                       <ul className="list-disc pl-6 space-y-2 text-gray-700">
                         {service.id === 'maison' && (
                           <>
-                            <li>Débouchage de tous types de canalisations</li>
-                            <li>Intervention sur les regards extérieurs</li>
-                            <li>Traitement des canalisations enterrées</li>
+                            <li><strong>Débouchage maison complète</strong> : WC, éviers, douches</li>
+                            <li><strong>Regards extérieurs</strong> : accès et débouchage des canalisations externes</li>
+                            <li><strong>Canalisations enterrées</strong> : hydrocurage et diagnostic caméra</li>
+                            <li><strong>Fosses septiques</strong> : vidange et entretien spécialisé</li>
                           </>
                         )}
                         {service.id === 'appartement' && (
                           <>
-                            <li>Solutions adaptées aux immeubles collectifs</li>
-                            <li>Coordination avec les syndics si nécessaire</li>
-                            <li>Interventions discrètes et propres</li>
+                            <li><strong>Débouchage appartement</strong> : solutions adaptées aux copropriétés</li>
+                            <li><strong>Colonnes communes</strong> : intervention sur les parties partagées</li>
+                            <li><strong>Coordination syndic</strong> : gestion administrative incluse</li>
+                            <li><strong>Intervention discrète</strong> : respect du voisinage garanti</li>
                           </>
                         )}
                         {service.id === 'villa' && (
                           <>
-                            <li>Traitement des systèmes complexes</li>
-                            <li>Entretien des fosses septiques</li>
-                            <li>Solutions pour grandes propriétés</li>
+                            <li><strong>Débouchage villa</strong> : systèmes de plomberie complexes</li>
+                            <li><strong>Multiples salles de bain</strong> : intervention simultanée possible</li>
+                            <li><strong>Espaces extérieurs</strong> : piscines, terrasses, jardins</li>
+                            <li><strong>Maintenance préventive</strong> : contrats d'entretien disponibles</li>
                           </>
                         )}
                         {service.id === 'studio' && (
                           <>
-                            <li>Interventions rapides et efficaces</li>
-                            <li>Solutions pour espaces restreints</li>
-                            <li>Techniques adaptées aux petites canalisations</li>
+                            <li><strong>Débouchage studio</strong> : intervention rapide en espace réduit</li>
+                            <li><strong>Équipement compact</strong> : outils adaptés aux petits espaces</li>
+                            <li><strong>Minimisation des nuisances</strong> : travail propre et efficace</li>
+                            <li><strong>Tarifs étudiants</strong> : conditions préférentielles disponibles</li>
                           </>
                         )}
                       </ul>
@@ -198,11 +225,34 @@ export default function DebouchageResidentielsPage() {
 
                 <h2 className="text-2xl font-bold mb-6">Problèmes Courants par Type d'Habitation</h2>
                 
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold mb-4">Maisons Individuelles</h3>
+                <div className="mb-8 bg-blue-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-semibold mb-4">🏡 Débouchage Maison Individuelle - Notre Spécialité</h3>
                   <p className="mb-4">
-                    Les maisons individuelles présentent souvent des problèmes spécifiques comme l'obstruction des canalisations extérieures, les racines d'arbres qui pénètrent dans les tuyaux, ou les problèmes de fosses septiques. Notre équipe dispose de l'équipement spécialisé nécessaire pour traiter ces situations particulières.
+                    Le <strong>débouchage maison</strong> individuelle présente des défis spécifiques : canalisations extérieures obstruées, racines d'arbres dans les tuyaux, fosses septiques problématiques. Notre équipe spécialisée en débouchage maison Luxembourg dispose de l'équipement professionnel nécessaire pour traiter efficacement ces situations particulières.
                   </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mt-4">
+                    <div className="bg-white p-4 rounded-lg">
+                      <h4 className="font-semibold mb-2 text-blue-800">Problèmes Courants :</h4>
+                      <ul className="text-sm space-y-1 text-gray-600">
+                        <li>• WC bouché - évacuation lente</li>
+                        <li>• Évier cuisine obstrué</li>
+                        <li>• Douche/baignoire qui se vide mal</li>
+                        <li>• Regard extérieur bouché</li>
+                        <li>• Odeurs de fosse septique</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg">
+                      <h4 className="font-semibold mb-2 text-blue-800">Solutions Maison :</h4>
+                      <ul className="text-sm space-y-1 text-gray-600">
+                        <li>• Hydrocurage haute pression</li>
+                        <li>• Furet électrique professionnel</li>
+                        <li>• Caméra d'inspection</li>
+                        <li>• Vidange fosse septique</li>
+                        <li>• Traitement racines d'arbres</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="mb-8">
@@ -226,7 +276,7 @@ export default function DebouchageResidentielsPage() {
                   </p>
                 </div>
 
-                <h2 className="text-2xl font-bold mb-6">Notre Approche du Débouchage Résidentiel</h2>
+                <h2 className="text-2xl font-bold mb-6">Notre Méthode Professionnelle de Débouchage Maison</h2>
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                   <div className="bg-blue-50 p-6 rounded-xl">
                     <h3 className="text-xl font-semibold mb-3">Diagnostic Précis</h3>
@@ -262,34 +312,102 @@ export default function DebouchageResidentielsPage() {
                   </div>
                 </div>
 
+                {/* Section tarifs transparents */}
+                <div className="bg-green-50 border border-green-200 rounded-xl p-8 mb-8">
+                  <h2 className="text-2xl font-bold mb-6 text-green-800">💰 Tarifs Débouchage Maison Luxembourg</h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white p-6 rounded-lg">
+                      <h3 className="font-bold text-lg mb-3 text-green-700">Tarifs Indicatifs</h3>
+                      <ul className="space-y-2 text-gray-700">
+                        <li className="flex justify-between">
+                          <span>Débouchage WC simple</span>
+                          <span className="font-semibold">à partir de 80€</span>
+                        </li>
+                        <li className="flex justify-between">
+                          <span>Débouchage évier/douche</span>
+                          <span className="font-semibold">à partir de 70€</span>
+                        </li>
+                        <li className="flex justify-between">
+                          <span>Hydrocurage maison</span>
+                          <span className="font-semibold">à partir de 150€</span>
+                        </li>
+                        <li className="flex justify-between">
+                          <span>Inspection caméra</span>
+                          <span className="font-semibold">à partir de 120€</span>
+                        </li>
+                      </ul>
+                      <p className="text-sm text-green-600 mt-3">
+                        <strong>Devis gratuit</strong> - Pas de frais cachés
+                      </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-lg">
+                      <h3 className="font-bold text-lg mb-3 text-green-700">Avantages Tarifaires</h3>
+                      <ul className="space-y-2 text-gray-700">
+                        <li>✓ <strong>Devis gratuit</strong> et sans engagement</li>
+                        <li>✓ <strong>Prix fixes</strong> annoncés avant intervention</li>
+                        <li>✓ <strong>Pas de frais de déplacement</strong> au Luxembourg</li>
+                        <li>✓ <strong>Remise 10%</strong> pour les seniors (+65 ans)</li>
+                        <li>✓ <strong>Paiement en 3x</strong> sans frais (>200€)</li>
+                        <li>✓ <strong>Garantie 6 mois</strong> sur l'intervention</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="bg-gray-50 p-8 rounded-xl mb-12">
-                  <h2 className="text-2xl font-bold mb-6">Pourquoi Nous Choisir ?</h2>
-                  <ul className="grid md:grid-cols-2 gap-4">
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Intervention rapide 24h/24 et 7j/7
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Techniciens certifiés et expérimentés
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Équipement professionnel de pointe
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Tarifs transparents sans surprise
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Garantie sur toutes nos interventions
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Solutions respectueuses de l'environnement
-                    </li>
-                  </ul>
+                  <h2 className="text-2xl font-bold mb-6">🏆 Pourquoi Nous Choisir pour Votre Débouchage Maison ?</h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">⚡</span>
+                          <div>
+                            <span className="font-semibold">Intervention rapide 24h/24 et 7j/7</span>
+                            <p className="text-sm text-gray-600">Équipe disponible en permanence, sur place sous 2h</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">👨‍🔧</span>
+                          <div>
+                            <span className="font-semibold">Techniciens certifiés et expérimentés</span>
+                            <p className="text-sm text-gray-600">15+ ans d'expérience, formation continue</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">🔧</span>
+                          <div>
+                            <span className="font-semibold">Équipement professionnel de pointe</span>
+                            <p className="text-sm text-gray-600">Hydrocureuse, caméras, furets électriques</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">💰</span>
+                          <div>
+                            <span className="font-semibold">Tarifs transparents sans surprise</span>
+                            <p className="text-sm text-gray-600">Prix annoncés à l'avance, devis gratuit</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">🛡️</span>
+                          <div>
+                            <span className="font-semibold">Garantie 6 mois sur toutes nos interventions</span>
+                            <p className="text-sm text-gray-600">Assurance décennale incluse</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="text-green-500 mr-3 text-xl">🌿</span>
+                          <div>
+                            <span className="font-semibold">Solutions respectueuses de l'environnement</span>
+                            <p className="text-sm text-gray-600">Produits écologiques, récupération des déchets</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
                 <h2 className="text-2xl font-bold mb-6">Questions Fréquentes sur le Débouchage Résidentiel</h2>
@@ -302,21 +420,32 @@ export default function DebouchageResidentielsPage() {
                   ))}
                 </div>
 
-                <h2 className="text-2xl font-bold mb-6">Zones d'Intervention</h2>
+                <h2 className="text-2xl font-bold mb-6">Débouchage Maison dans Tout le Luxembourg</h2>
                 <p className="mb-8">
-                  Nous intervenons dans tout le Luxembourg pour vos besoins de débouchage résidentiel, notamment à Luxembourg-Ville, Esch-sur-Alzette, Differdange, Dudelange, Ettelbruck, et toutes les communes environnantes. Notre équipe mobile peut généralement être sur place dans l'heure suivant votre appel pour les situations d'urgence.
+                  Notre service de <strong>débouchage maison Luxembourg</strong> couvre l'ensemble du territoire : Luxembourg-Ville, Esch-sur-Alzette, Differdange, Dudelange, Ettelbruck, et toutes les communes environnantes. Pour votre débouchage maison urgent, notre équipe mobile peut généralement être sur place dans l'heure suivant votre appel.
                 </p>
               </div>
 
-              <div className="mt-12 text-center">
-                <a 
-                  href="/contact" 
-                  className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  Demander un Devis Gratuit
-                </a>
-                <p className="mt-4 text-gray-600">
-                  Réponse rapide garantie sous 24h
+              {/* CTA Final optimisé */}
+              <div className="mt-12 bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-center text-white">
+                <h2 className="text-2xl font-bold mb-4">🚨 Besoin d'un Débouchage Maison Urgent ?</h2>
+                <p className="text-lg mb-6">Notre équipe peut intervenir chez vous dans l'heure !</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="tel:+352661297770" 
+                    className="inline-flex items-center justify-center bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+                  >
+                    📞 +352 661 297 770
+                  </a>
+                  <a 
+                    href="/devis" 
+                    className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+                  >
+                    Devis Gratuit en Ligne
+                  </a>
+                </div>
+                <p className="mt-4 text-sm opacity-90">
+                  ✓ Intervention sous 2h ✓ Devis gratuit ✓ Garantie 6 mois
                 </p>
               </div>
             </div>

@@ -6,9 +6,9 @@ import { serviceCategories } from '@/data/services'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Services de Débouchage Commercial Luxembourg | Solutions Professionnelles',
-  description: 'Services professionnels de débouchage pour établissements commerciaux au Luxembourg : restaurants, hôtels et commerces. Intervention rapide 24/7. ☎️ +352 661 297 770',
-  keywords: 'débouchage commercial, débouchage restaurant, débouchage hôtel, débouchage commerce, plombier luxembourg, canalisation bouchée professionnelle',
+  title: '🍽️ Restaurant & Commerce | Plombier Professionnel Luxembourg',
+  description: 'Spécialiste débouchage restaurant Luxembourg. Bac à graisse, cuisine pro, évacuations. Intervention urgente 2h. Devis gratuit ☎️ +352 661 297 770',
+  keywords: 'débouchage restaurant luxembourg, plombier restaurant, bac à graisse bouché, cuisine professionnelle, évacuation restaurant, urgence restaurant',
   alternates: {
     canonical: 'https://debouchage-luxembourg.com/services/debouchage-commerciaux',
   },
@@ -136,10 +136,10 @@ export default function DebouchageCommerciauxPage() {
                 <span>🏪</span>
               </div>
               <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
-                Services de Débouchage Commercial
+                Débouchage Restaurant Luxembourg - Expert Commercial
               </h1>
               <p className="text-xl text-center text-gray-600 mb-12">
-                Solutions professionnelles pour tous types d'établissements commerciaux au Luxembourg
+                Spécialiste débouchage restaurant, hôtel et commerce au Luxembourg
               </p>
             </div>
           </div>
@@ -149,10 +149,33 @@ export default function DebouchageCommerciauxPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white shadow-xl rounded-2xl p-8 md:p-12">
               <div className="prose max-w-none">
-                <h2 className="text-2xl font-bold mb-6">Services de Débouchage pour Établissements Commerciaux</h2>
-                <p className="mb-8">
-                  Notre équipe de plombiers professionnels intervient dans tous les types d'établissements commerciaux au Luxembourg pour résoudre vos problèmes de canalisations bouchées. Que vous gériez un restaurant, un hôtel ou un commerce, nous disposons des compétences et de l'équipement nécessaires pour intervenir efficacement et rapidement, en minimisant l'impact sur votre activité.
+                <h2 className="text-2xl font-bold mb-6">Débouchage Restaurant et Établissements Commerciaux Luxembourg</h2>
+                <p className="mb-6">
+                  <strong>Spécialiste du débouchage restaurant au Luxembourg</strong>, notre équipe de plombiers professionnels intervient dans tous les établissements commerciaux pour résoudre vos problèmes de canalisations. Que vous gériez un restaurant, hôtel ou commerce, nous disposons de l'équipement professionnel nécessaire pour intervenir rapidement sans interrompre votre activité.
                 </p>
+
+                {/* CTA Urgence Restaurant */}
+                <div className="bg-red-50 border-l-4 border-red-400 p-6 mb-8 rounded-r-lg">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div className="text-2xl">🍽️</div>
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="text-lg font-medium text-red-800">Urgence Débouchage Restaurant ?</h3>
+                      <div className="mt-2 text-red-700">
+                        <p className="text-sm">
+                          <strong>Intervention d'urgence 24h/24</strong> - Bac à graisse bouché ? Cuisine qui reflue ? Notre équipe peut intervenir sous 2h !
+                        </p>
+                        <a 
+                          href="tel:+352661297770" 
+                          className="inline-flex items-center mt-3 bg-red-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-red-700 transition-colors"
+                        >
+                          📞 +352 661 297 770 - Urgence Restaurant
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-12">
                   {commercialServices.map(service => (
@@ -165,23 +188,26 @@ export default function DebouchageCommerciauxPage() {
                       <ul className="list-disc pl-6 space-y-2 text-gray-700">
                         {service.id === 'restaurant' && (
                           <>
-                            <li>Débouchage de bacs à graisse</li>
-                            <li>Nettoyage des évacuations de cuisine</li>
-                            <li>Entretien préventif régulier</li>
+                            <li><strong>Bacs à graisse bouchés</strong> : vidange et débouchage d'urgence</li>
+                            <li><strong>Évacuations cuisine</strong> : élimination des résidus alimentaires</li>
+                            <li><strong>Plonge restaurant</strong> : débouchage éviers professionnels</li>
+                            <li><strong>Contrat d'entretien</strong> : maintenance préventive régulière</li>
                           </>
                         )}
                         {service.id === 'hotel' && (
                           <>
-                            <li>Solutions pour multiples points d'eau</li>
-                            <li>Intervention discrète pour les clients</li>
-                            <li>Maintenance des systèmes complexes</li>
+                            <li><strong>Multiples points d'eau</strong> : chambres, suites, parties communes</li>
+                            <li><strong>Intervention discrète</strong> : respect de la clientèle 24h/24</li>
+                            <li><strong>Buanderies hôtels</strong> : systèmes d'évacuation industriels</li>
+                            <li><strong>Spas et piscines</strong> : maintenance spécialisée</li>
                           </>
                         )}
                         {service.id === 'commerce' && (
                           <>
-                            <li>Débouchage sanitaires publics</li>
-                            <li>Entretien des évacuations communes</li>
-                            <li>Solutions pour centres commerciaux</li>
+                            <li><strong>Sanitaires publics</strong> : WC et lavabos clients</li>
+                            <li><strong>Centres commerciaux</strong> : évacuations communes</li>
+                            <li><strong>Magasins et bureaux</strong> : solutions professionnelles</li>
+                            <li><strong>Parkings couverts</strong> : évacuations pluviales</li>
                           </>
                         )}
                       </ul>
@@ -191,11 +217,34 @@ export default function DebouchageCommerciauxPage() {
 
                 <h2 className="text-2xl font-bold mb-6">Problèmes Courants par Type d'Établissement</h2>
                 
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold mb-4">Restaurants et Cuisines Professionnelles</h3>
+                <div className="mb-8 bg-orange-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-semibold mb-4">🍽️ Débouchage Restaurant - Notre Spécialité</h3>
                   <p className="mb-4">
-                    Les restaurants font face à des défis spécifiques liés à l'accumulation de graisses et de résidus alimentaires. Nos solutions incluent le nettoyage régulier des bacs à graisse, le débouchage des évacuations de cuisine et l'entretien préventif pour éviter les interruptions d'activité.
+                    Le <strong>débouchage restaurant</strong> présente des défis uniques : accumulation de graisses, bacs à graisse saturés, évacuations de cuisine obstruées. Notre équipe spécialisée en débouchage restaurant Luxembourg intervient 24h/24 pour éviter toute interruption d'activité dans votre établissement.
                   </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mt-4">
+                    <div className="bg-white p-4 rounded-lg">
+                      <h4 className="font-semibold mb-2 text-orange-800">Problèmes Restaurant Fréquents :</h4>
+                      <ul className="text-sm space-y-1 text-gray-600">
+                        <li>• Bac à graisse bouché - odeurs</li>
+                        <li>• Évier plonge restaurant obstrué</li>
+                        <li>• Évacuation cuisine qui remonte</li>
+                        <li>• Sol de cuisine inondé</li>
+                        <li>• WC clients/personnel bouchés</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg">
+                      <h4 className="font-semibold mb-2 text-orange-800">Solutions Restaurant :</h4>
+                      <ul className="text-sm space-y-1 text-gray-600">
+                        <li>• Vidange bac à graisse d'urgence</li>
+                        <li>• Hydrocurage évacuations cuisine</li>
+                        <li>• Débouchage haute pression</li>
+                        <li>• Nettoyage préventif mensuel</li>
+                        <li>• Contrat maintenance restaurant</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="mb-8">
@@ -212,7 +261,7 @@ export default function DebouchageCommerciauxPage() {
                   </p>
                 </div>
 
-                <h2 className="text-2xl font-bold mb-6">Notre Approche du Débouchage Commercial</h2>
+                <h2 className="text-2xl font-bold mb-6">Notre Méthode Professionnelle de Débouchage Restaurant</h2>
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                   <div className="bg-blue-50 p-6 rounded-xl">
                     <h3 className="text-xl font-semibold mb-3">Diagnostic Professionnel</h3>
@@ -278,21 +327,32 @@ export default function DebouchageCommerciauxPage() {
                   </ul>
                 </div>
 
-                <h2 className="text-2xl font-bold mb-6">Zones d'Intervention</h2>
+                <h2 className="text-2xl font-bold mb-6">Débouchage Restaurant dans Tout le Luxembourg</h2>
                 <p className="mb-8">
-                  Nous intervenons dans tout le Luxembourg pour vos besoins de débouchage commercial, notamment à Luxembourg-Ville, Esch-sur-Alzette, Differdange, Dudelange, Ettelbruck, et toutes les communes environnantes. Notre équipe mobile peut généralement être sur place dans l'heure suivant votre appel pour les situations d'urgence.
+                  Notre service de <strong>débouchage restaurant Luxembourg</strong> couvre l'ensemble du territoire : Luxembourg-Ville, Esch-sur-Alzette, Differdange, Dudelange, Ettelbruck, et toutes les communes. Pour votre urgence débouchage restaurant, notre équipe mobile peut généralement être sur place dans l'heure pour éviter toute fermeture de votre établissement.
                 </p>
               </div>
 
-              <div className="mt-12 text-center">
-                <a 
-                  href="/contact" 
-                  className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  Demander un Devis Gratuit
-                </a>
-                <p className="mt-4 text-gray-600">
-                  Réponse rapide garantie sous 24h
+              {/* CTA Final Restaurant */}
+              <div className="mt-12 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-center text-white">
+                <h2 className="text-2xl font-bold mb-4">🍽️ Urgence Débouchage Restaurant ?</h2>
+                <p className="text-lg mb-6">Ne fermez pas ! Notre équipe intervient sous 2h partout au Luxembourg</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="tel:+352661297770" 
+                    className="inline-flex items-center justify-center bg-white text-orange-600 px-6 py-3 rounded-full text-lg font-bold hover:bg-gray-100 transition-colors shadow-lg"
+                  >
+                    📞 +352 661 297 770
+                  </a>
+                  <a 
+                    href="/devis" 
+                    className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors"
+                  >
+                    Devis Restaurant Gratuit
+                  </a>
+                </div>
+                <p className="mt-4 text-sm opacity-90">
+                  ✓ Intervention sous 2h ✓ Spécialiste bac à graisse ✓ Pas d'interruption d'activité
                 </p>
               </div>
             </div>

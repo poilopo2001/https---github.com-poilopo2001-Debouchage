@@ -184,9 +184,31 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
-              {new Date().getFullYear()} Debouchage Luxembourg. Tous droits réservés.
-            </p>
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <p className="text-gray-400 text-sm">
+                {new Date().getFullYear()} Debouchage Luxembourg. Tous droits réservés.
+              </p>
+              <p className="text-gray-400 text-sm">
+                Réalisé avec ❤️ par{' '}
+                <a 
+                  href="https://leadgen.lu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  Leadgen.lu
+                </a>
+                {' '}et{' '}
+                <a 
+                  href="https://www.seo-ia.lu/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  seo-ia.lu
+                </a>
+              </p>
+            </div>
             <div className="flex gap-6">
               <Link href="/mentions-legales" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Mentions Légales
